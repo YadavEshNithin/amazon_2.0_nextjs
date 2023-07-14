@@ -50,13 +50,14 @@ const DynamicPage = () => {
               </div>
             </> :
             <>
-              <div className="relative w-full grid md:grid-cols-3 gap-3 rounded-xl border shadow border-gray-200 bg-gray-100 p-2">
+              <div className="relative w-full grid md:grid-cols-3 gap-3 rounded-xl border shadow border-gray-200 bg-white p-2">
                 <div className="flex items-center justify-center">
                   {typeof window !== 'undefined' && (
                     <Image
                       src={product.image}
                       width={300}
                       height={300}
+                      className="object-contain mt-10"
                       alt="product_image"
                     />
                   )}
