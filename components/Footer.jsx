@@ -189,7 +189,7 @@ const Footer = () => {
                     <ChevronUpIcon className="h-4 text-center mx-auto mb-1" />
                     <span>TOP OF PAGE</span>
                 </button>
-                <div className="flex justify-between pr-10  space-x-16 p-5 bg-[#232F3E] text-white">
+                <div className="flex justify-between pr-10  space-x-16 p-5 bg-[#232F3E] text-white text-sm">
 
                     <div className="space-y-4">
                         <p>Amazon.in</p>

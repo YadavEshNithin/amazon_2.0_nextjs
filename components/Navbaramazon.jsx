@@ -108,7 +108,7 @@ const Navbaramazon = () => {
             searchquery &&
 
              <div className="absolute mx-auto max-h-96 top-12 left-0
-              overflow-y-scroll w-full rounded-lg bg-gray-100 space-y-6 p-2 border shadow border-gray-300">
+              overflow-y-scroll w-full rounded-lg bg-white space-y-6 p-2 border shadow border-gray-300">
               {
                  filteredProducts.length > 0 ?
                  <>
@@ -203,7 +203,7 @@ const Navbaramazon = () => {
             searchquery &&
 
              <div className="absolute mx-auto max-h-96 top-14 left-0
-              overflow-y-scroll w-full rounded-lg bg-gray-100 space-y-6 p-2 border shadow border-gray-300">
+              overflow-y-scroll w-full rounded-lg bg-white space-y-6 p-2 border shadow border-gray-300">
               {
                  filteredProducts.length > 0 ?
                  <>
