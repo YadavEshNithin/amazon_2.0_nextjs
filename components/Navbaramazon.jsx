@@ -183,7 +183,7 @@ const Navbaramazon = () => {
 
                 <Image src={"https://links.papareact.com/f90"} width={180} height={40} alt="amazon_logo" className="object-contain h-10 cursor-pointer ml-6 w-16" />
               </div>
-              <div className="flex items-center relative text-xs space-x-3 mx-3 whitespace-nowrap">
+              <div className="flex items-center relative text-xs space-x-2 mx-3 whitespace-nowrap">
                 <div onClick={!session ? signIn : signOut} className="hover:underline cursor-pointer">
                   <p className="w-28 truncate sm:w-full">{session ? `Hello, ${session.user.name}` : "Signin"}</p>
                   <p className="font-extrabold md:text-sm ">Accounts & lists</p>
