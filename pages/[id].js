@@ -7,6 +7,7 @@ import { StarIcon } from '@heroicons/react/24/solid'
 import Navbaramazon from '../components/Navbaramazon'
 import Footer from '../components/Footer'
 import {BeatLoader} from "react-spinners"
+import Image from 'next/image'
 
 const DynamicPage = () => {
   const router = useRouter()
@@ -52,7 +53,7 @@ const DynamicPage = () => {
               <div className="relative w-full grid md:grid-cols-3 gap-3 rounded-xl border shadow border-gray-200 bg-gray-100 p-2">
                 <div className="flex items-center justify-center">
                   {typeof window !== 'undefined' && (
-                    <img
+                    <Image
                       src={product.image}
                       width={300}
                       height={300}
@@ -87,21 +88,21 @@ const DynamicPage = () => {
                   <div className="flex items-center space-x-2">
                     {product.hasPrime === "true" ?
                       <>
-                        <img
+                        <Image width={20} height={20}
                           className="w-12 object-contain"
-                          src="pngwing.com (7).png"
+                          src="/pngwing.com (7).png"
                           alt="prime-delivery-logo"
                         />
                         <p className="text-sm text-gray-500">Free Next-day Delivery</p>
                       </>
                       : hasPrimesearch ? <>
-                        <img
+                        <Image width={20} height={20}mg
                           className="w-12 object-contain"
-                          src="pngwing.com (7).png"
+                          src="/pngwing.com (7).png"
                           alt="prime-delivery-logo"
                         />
                         <p className="text-sm text-gray-500">Free Next-day Delivery</p>
-                      </> : ""}
+                      </> : `""`}
                   </div>
                   <button
                     onClick={() =>

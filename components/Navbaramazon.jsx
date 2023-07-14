@@ -91,8 +91,8 @@ const Navbaramazon = () => {
              
             >
               <option>All</option>
-              <option>Men's Clothing</option>
-              <option>Women's Clothing</option>
+              <option>{`Men's Clothing`}</option>
+              <option>{`Women's Clothing`}</option>
               <option>Electronics</option>
               <option>Jewelery</option>
             </select>
