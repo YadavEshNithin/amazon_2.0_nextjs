@@ -144,7 +144,7 @@ const Navbaramazon = () => {
           </div>
           <div className="flex items-center space-x-3 mx-3 lg:space-x-6 md:mx-6 text-white text-xs whitespace-nowrap">
             <div onClick={!session ? signIn : signOut} className="hover:underline cursor-pointer">
-              <p>{session ? `Hello, ${session.user.name}` : "Signin"}</p>
+              <p className="w-full sm:w-28 truncate xl:w-full">{session ? `Hello, ${session.user.name}` : "Signin"}</p>
               <p className="font-extrabold md:text-sm ">Accounts & lists</p>
             </div>
             <div onClick={() => router.push("/orders")} className="hover:underline cursor-pointer">
@@ -185,7 +185,7 @@ const Navbaramazon = () => {
               </div>
               <div className="flex items-center relative text-xs space-x-3 mx-3 whitespace-nowrap">
                 <div onClick={!session ? signIn : signOut} className="hover:underline cursor-pointer">
-                  <p>{session ? `Hello, ${session.user.name}` : "Signin"}</p>
+                  <p className="w-28 truncate sm:w-full">{session ? `Hello, ${session.user.name}` : "Signin"}</p>
                   <p className="font-extrabold md:text-sm ">Accounts & lists</p>
                 </div>
                 <div className="hover:underline cursor-pointer" onClick={() => router.push("/orders")}>
