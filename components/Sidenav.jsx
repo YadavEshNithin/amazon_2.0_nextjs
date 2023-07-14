@@ -19,7 +19,7 @@ const Sidenav = ({ open, setOpen, }) => {
             <div onClick={() => setOpen(!open)}>
                 {open ? <div className="relative flex justify-end -mr-12 -mt-2 cursor-pointer">
                     <XCircleIcon className="h-8 absolute bg-white w-10 rounded-md hover:bg-red-500 hover:text-white duration-300" /> </div> :
-                    <Bars3Icon className="h-6 w-6 ml-2 mt-2.5 cursor-pointer" />
+                    <Bars3Icon className="h-6 w-6 ml-2 mt-2 cursor-pointer" />
                 }
             </div>
             {
