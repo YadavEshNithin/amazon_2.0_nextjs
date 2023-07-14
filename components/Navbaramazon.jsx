@@ -181,7 +181,7 @@ const Navbaramazon = () => {
                 </div>
                 
 
-                <Image src={"https://links.papareact.com/f90"} width={80} height={40} alt="amazon_logo" className="object-contain h-10 cursor-pointer ml-6 " />
+                <Image src={"https://links.papareact.com/f90"} width={180} height={40} alt="amazon_logo" className="object-contain h-10 cursor-pointer ml-6 w-16" />
               </div>
               <div className="flex items-center relative text-xs space-x-2 mx-3 whitespace-nowrap">
                 <div onClick={!session ? signIn : signOut} className="hover:underline cursor-pointer">
