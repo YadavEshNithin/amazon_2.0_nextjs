@@ -23,7 +23,7 @@ const ShopCategory = () => {
           <Image className="object-contain mx-auto" src={"/pngwing.com (10).png"} width={100} height={100} alt="category_logo" />
           <div className="absolute bottom-2 text-center w-full">
             <p onClick={()=>router.push("/")} className="bg-gray-100 font-semibold rounded-sm mx-3 py-1 border shadow border-gray-300 cursor-pointer">
-              Men's fashion
+              {`Men's fashion`}
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const ShopCategory = () => {
           <Image className=" object-contain mx-auto" src={"/pngwing.com (11).png"} width={144} height={100} alt="category_logo" />
           <div className="absolute bottom-2 text-center w-full">
             <p onClick={()=>router.push("/")} className="bg-gray-100 font-semibold rounded-sm mx-3 py-1 border shadow border-gray-300 cursor-pointer">
-              Women's fashion
+             {` Women's fashion`}
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ const ShopCategory = () => {
           <Image className="object-contain mx-auto" src={"/pngwing.com (12).png"} width={160} height={100} alt="category_logo" />
           <div className="absolute bottom-2 text-center w-full">
             <p onClick={()=>router.push("/")} className="bg-gray-100 font-semibold rounded-sm mx-3 py-1 border shadow border-gray-300 cursor-pointer">
-              Electronics
+              {`Electronics`}
             </p>
           </div>
         </div>

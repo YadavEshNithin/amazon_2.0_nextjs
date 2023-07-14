@@ -38,15 +38,15 @@ const Sidenav = ({ open, setOpen, }) => {
                         <p className="py-2 ml-3 font-semibold text-xl">Top Categories for you</p>
                         <div onClick={() => setOpen(!open)} className=" space-y-2 mt-2 mb-1 ">
                             <p className="hover:font-semibold p-1 pl-6 hover:bg-gray-300/60 rounded-md cursor-pointer">All Categories</p>
-                            <p className="hover:font-semibold p-1 pl-6 hover:bg-gray-300/60 rounded-md cursor-pointer" >Men's Clothing</p>
-                            <p className="hover:font-semibold p-1 pl-6 hover:bg-gray-300/60 rounded-md cursor-pointer">Women's Clothing</p>
+                            <p className="hover:font-semibold p-1 pl-6 hover:bg-gray-300/60 rounded-md cursor-pointer" >{`Men's Clothing`}</p>
+                            <p className="hover:font-semibold p-1 pl-6 hover:bg-gray-300/60 rounded-md cursor-pointer">{`Women's Clothing`}</p>
                             <p className="hover:font-semibold p-1 pl-6 hover:bg-gray-300/60 rounded-md cursor-pointer">Electronics</p>
                             <p className="hover:font-semibold p-1 pl-6 hover:bg-gray-300/60 rounded-md cursor-pointer">Jewelery</p>
                         </div>
                         <p className="h-1 bg-gray-400/60"></p>
                         <p className='py-2 font-semibold ml-3 text-xl'>Programs and Feauters</p>
                         <div className=" space-y-2 mt-2">
-                            <p className="hover:font-semibold pl-6 p-1 hover:bg-gray-300/60  rounded-md cursor-pointer">Today's Deals</p>
+                            <p className="hover:font-semibold pl-6 p-1 hover:bg-gray-300/60  rounded-md cursor-pointer">{`Today's Deals`}</p>
                             <p className="hover:font-semibold pl-6 p-1 hover:bg-gray-300/60  rounded-md cursor-pointer">Amazon Pay</p>
                             <p className="hover:font-semibold pl-6 p-1 hover:bg-gray-300/60  rounded-md cursor-pointer">Amazon Launchpad</p>
                             <p className="hover:font-semibold pl-6 p-1 hover:bg-gray-300/60  rounded-md cursor-pointer">Try Prime</p>

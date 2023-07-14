@@ -31,10 +31,10 @@ const addItemsToBasket = () => {
           <p>{title}</p>
           <div className="flex">
             {rating ? Array(rating).fill().map((_, i) => (
-              <StarIcon className="h-6 text-yellow-500" />
+              <StarIcon key={i} className="h-6 text-yellow-500" />
             )) :
             Array(ratingsearch).fill().map((_, i) => (
-              <StarIcon className="h-6 text-yellow-500" />
+              <StarIcon key={i} className="h-6 text-yellow-500" />
             ))
             }
           </div>
@@ -43,13 +43,13 @@ const addItemsToBasket = () => {
           <div className="flex items-center space-x-2">
             {hasPrime && (
             <>
-              <img className="w-12 object-contain" src="pngwing.com (7).png" alt="prime-delivery-logo" />
+              <Image width={20} height={20} className="w-12 object-contain" src="/pngwing.com (7).png" alt="prime-delivery-logo" />
             <p className="text-sm text-gray-500">Free Next-day Delivery</p>
             </>
             )}
             {hasPrimesearch && (
             <>
-              <img className="w-12 object-contain" src="pngwing.com (7).png" alt="prime-delivery-logo" />
+              <Image width={20} height={20} className="w-12 object-contain" src="/pngwing.com (7).png" alt="prime-delivery-logo" />
             <p className="text-sm text-gray-500">Free Next-day Delivery</p>
             </>
             )}

@@ -9,7 +9,7 @@ const BottomHeader = ({sidebar, setSidebar}) => {
                 <p className="bottom_header">Amazon miniTV</p>
                 <p className="bottom_header">Sell</p>
                 <p className="bottom_header">Best Sellers</p>
-                <p className="bottom_header">Today's Deals</p>
+                <p className="bottom_header">{`Today's Deals`}</p>
                 <p className="bottom_header">Mobiles</p>
                 <p className="bottom_header hidden sm:inline-block">New Releases</p>
                 <p className="bottom_header hidden lg:inline-block">Customer Service</p>
