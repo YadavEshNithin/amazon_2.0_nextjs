@@ -5,8 +5,8 @@ import ProductFeed from '../components/ProductFeed';
 import { getSession } from 'next-auth/react';
 import Banner from '../components/Bannert';
 import Footer from "../components/Footer"
-import { setAllProducts } from '../slices/basketSlice';
-import { useDispatch } from 'react-redux';
+import {  setAllProducts } from '../slices/basketSlice';
+import { useDispatch  } from 'react-redux';
 import { useEffect } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,7 +19,6 @@ export default function Home({ products }) {
     dispatch(setAllProducts({ allProducts: products }));
   }, [products]);
 
-  
 
   // console.log(products)
  

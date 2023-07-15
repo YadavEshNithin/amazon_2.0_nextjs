@@ -28,8 +28,8 @@ const DynamicPage = () => {
     Math.floor(Math.random() * (Max_RATING - MIN_RATING + 1)) + MIN_RATING
 
   const [hasPrimesearch] = useState(Math.random() < 0.5);
-  console.log(hasPrimesearch)
-  console.log("hasPrimesearch")
+  // console.log(hasPrimesearch)
+  // console.log("hasPrimesearch")
 
 
 
@@ -103,7 +103,7 @@ const DynamicPage = () => {
                           alt="prime-delivery-logo"
                         />
                         <p className="text-sm text-gray-500">Free Next-day Delivery</p>
-                      </> : `""`}
+                      </> : ``}
                   </div>
                   <button
                     onClick={() =>

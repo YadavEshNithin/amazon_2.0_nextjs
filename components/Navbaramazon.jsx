@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 import { signIn, signOut, useSession } from "next-auth/react"
 import { useRouter } from 'next/router'
-import { useSelector } from 'react-redux'
-import { selectItems } from '../slices/basketSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { addToCategory, selectItems } from '../slices/basketSlice'
 import Sidenav from './Sidenav'
 import AddressDialog from './AddressDialog'
 import { useEffect } from 'react'
@@ -18,6 +18,7 @@ const Navbaramazon = () => {
   const { data: session } = useSession()
   const router = useRouter()
 
+  
   const items = useSelector(selectItems);
 
   const [open, setOpen] = useState(false)
@@ -34,6 +35,8 @@ const Navbaramazon = () => {
   // console.log(allProducts)
   // console.log(data)
 
+
+
   const [searchquery, setSearchquery] = useState("")
   const [filteredProducts, setFilteredProducts] = useState([])
 
@@ -41,6 +44,8 @@ const Navbaramazon = () => {
   const handlesearchChange = (e) => {
     setSearchquery(e.target.value)
   }
+
+  // console.log(searchquery)
 
   useEffect(() => {
     const filtered = data.filter((item) => (
@@ -88,7 +93,8 @@ const Navbaramazon = () => {
           <div className="hidden sm:flex items-center bg-yellow-500 flex-grow rounded-lg -ml-6 lg:ml-0 relative">
             <select
               className="p-2 w-14 md:w-20 rounded-l-lg bg-gray-300"
-             
+            
+
             >
               <option>All</option>
               <option>{`Men's Clothing`}</option>
@@ -97,8 +103,8 @@ const Navbaramazon = () => {
               <option>Jewelery</option>
             </select>
             <input
-            value={searchquery}
-            onChange={handlesearchChange}
+              value={searchquery}
+              onChange={handlesearchChange}
               placeholder="Search products..."
               className="w-6 p-2 flex-grow flex-shrink focus:outline-none px-4"
               type="text"

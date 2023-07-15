@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     items: [],
     allProducts: [],
+   
 };
 
 export const basketSlice = createSlice ({
@@ -29,12 +30,13 @@ export const basketSlice = createSlice ({
         setAllProducts: (state, action) => {
             state.allProducts = action.payload;
           },
+       
 
         
     },
 });
 
-export const {addToBasket, removeFromBasket, setAllProducts} = basketSlice.actions;
+export const {addToBasket, removeFromBasket, setAllProducts,} = basketSlice.actions;
 
 export const selectItems = (state) => state.basket.items;
 export const selecttotalItems = (state) => state.basket.items.reduce((total, item)=> total + item.price , 0)
